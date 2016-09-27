@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_msg_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:visibility="visible"
+        android:layout_marginEnd="@dimen/margin_tiny"
+        android:background="@drawable/shape_chat_msg_sent">
+
+        <TextView
+            android:text="Hello Bro!"
+            android:id="@+id/tv_chat_msg_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:maxWidth="150dp"
+            android:textColor="@color/color_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_msg_received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_tiny"
+        android:background="@drawable/shape_chat_msg_received">
+
+        <TextView
+            android:id="@+id/tv_chat_msg_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:maxWidth="150dp"
+            android:textColor="@color/color_black" />
+    </RelativeLayout>
+
+</RelativeLayout>
